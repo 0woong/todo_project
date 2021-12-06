@@ -1,0 +1,30 @@
+.section {
+  padding: 20px;
+  background-color: #25273c;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background: none;
+  border: none;
+  color: #999999;
+  font-size: 13px;
+  height: 22px;
+  line-height: 22px;
+  padding: 0;
+}
+.btn:hover {
+  color: #eeeeee;
+}
+
+.btn.active {
+  color: #3a7bfd;
+}
+
+.left {
+  color: #999999;
+  font-size: 13px;
+  height: 22px;
+  line-height: 22px;
+}

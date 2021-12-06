@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'SF_IceLemon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_IceLemon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	/* line-height: 1; */
+	color:#ffffff;
+    background-color:#161722;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+mark {
+    background: none;
+}
+
+/* custom css */
+
+.header {
+    height: 300px;
+    background-image: url(header_bg.jpg);
+    /* contain, cover */
+    background-size: contain;
+}
+
+.header-section {
+    max-width: 540px;
+	margin: 0 auto;
+	padding: 150px 20px 0 20px;
+}
+
+.header-logo {
+	font-family: SF_IceLemon, sans-serif;
+	font-size: 50px;
+}
+
+.header-form {
+	padding: 20px;
+	background-color: #25273c;
+	display: flex;
+}
+
+.header-form-btn {
+	width: 24px;
+	height: 24px;
+	background: none;
+	border: none;
+	padding: 0;
+	margin-right: 15px;
+}
+
+.header-form-img {
+	width: 24px;
+	height: 24px;
+}
+
+.header-form-text {
+	height: 24px;
+	line-height: 24px;
+	background: none;
+	border: 0;
+	padding: 0;
+	color: #dddddd;
+	font-size: 16px;
+	flex:1;
+	font-family: Cafe24SsurroundAir, 'sans-serif';
+}
+
+.header-form-text:focus{
+	outline: none;
+	border-bottom: 1px solid #999999;
+}
+
+.main {
+	padding-top: 30px;
+}
+
+.section {
+	max-width: 540px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.todo-item {
+	padding: 20px;
+	background-color: #25273c;
+	display: flex;
+}
+
+.todo-item-check {
+	background: none;
+	border: none;
+	width: 24px;
+	height: 24px;
+	margin: 0 15px 0 0;
+}
+
+.todo-item-text {
+	height: 24px;
+	line-height: 26px;
+	padding: 0;
+	color: #dddddd;
+	font-size: 16px;
+	flex:1;
+	font-family: 'Cafe24SsurroundAir';
+}
+
+.todo-item-del{
+	width: 24px;
+	height: 24px;
+	background: none;
+	border: none;
+	padding: 0;
+	margin-left: 15px;
+}
+
+.todo-item-img {
+	width: 24px;
+	height: 24px;
+	transform: rotate(45deg); /* deg : degree */
+}
+
+.status-section {
+	padding: 20px;
+	background-color: #25273c;
+	display: flex;
+	justify-content: space-between;
+}
+
+.status-section button {
+	background: none;
+	border: none;
+	color: #999999;
+	font-size: 13px;
+	height: 22px;
+	line-height: 22px;
+	padding: 0;
+}
+
+.status-section button:hover {
+	color: #eeeeee;
+}
+
+.status-section button:active {
+	color: #3a7bfd;
+}
+
+.status-left {
+	color: #999999;
+	font-size: 13px;
+	height: 22px;
+	line-height: 22px;
+}
+
+.footer {
+	background: #0d0d0d;
+	position: absolute;
+	bottom: 0;
+	/* position:absolute, position:fixed; => width는 자식요소를 기준으로 맞춰지는 성질로 변경됨 */
+	width: 100%;
+}
+
+.footer-section {
+	max-width: 540px;
+	margin: 0 auto;
+	padding: 30px 20px;
+}
+
+.footer-section>div {
+	margin: 20px 0;
+}

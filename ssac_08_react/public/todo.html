@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-section">
+            <h1 class="header-logo">TODO APP</h1>
+            <div class="header-form">
+                <button type="button" class="header-form-btn">
+                    <img src="add_button.svg" alt="" class="header-form-img" />
+                </button>
+                <input type="text" class="header-form-text" placeholder="새 할 일을 입력해주세요."/>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section">
+            <ul class="todo-list">
+                <li class="todo-item">
+                    <input type="checkbox" class="todo-item-check"/>
+                    <mark class="todo-item-text">할일 todo</mark>
+                    <button type="button" class="todo-item-del">
+                        <img src="add_button.svg" alt="" class="todo-item-img" />
+                    </button>
+                </li>
+            </ul> 
+        </section>
+        <section class="section">
+            <div class="status-section">
+                <div class="status-left">10개 남음</div>
+                <div class="status-filter">
+                    <button type="button" class="btn-all">전체목록</button>
+                    <button type="button" class="btn-left">남은목록</button>
+                    <button type="button" class="btn-complete">완료목록</button>
+                </div>
+                <div class="status-clear">
+                    <button type="button" class="btn-clear">완료목록삭제</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-section">
+            <div>TODO APP</div>
+            <div>&copy; Copyright All right reserved.</div>
+        </div>
+    </footer>
+</body>
+</html>

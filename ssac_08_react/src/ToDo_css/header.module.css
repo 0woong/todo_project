@@ -1,0 +1,54 @@
+#header {
+  height: 300px;
+  background-image: url(header_bg.jpg);
+  /* contain , cover */
+  background-size: contain;
+}
+
+.section {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 150px 20px 0 20px;
+}
+
+.logo {
+  font-family: SF_IceLemon, sans-serif;
+  font-size: 50px;
+}
+
+.form {
+  padding: 20px;
+  background-color: #25273c;
+  display: flex;
+}
+
+.form-btn {
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 15px;
+}
+
+.form-img {
+  width: 24px;
+  height: 24px;
+}
+
+.form-text {
+  height: 24px;
+  line-height: 25px;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: #dddddd;
+  font-size: 16px;
+  flex: 1;
+  font-family: Cafe24SsurroundAir, sans-serif;
+}
+
+.form-text:focus {
+  outline: none;
+  border-bottom: 1px solid #999999;
+}

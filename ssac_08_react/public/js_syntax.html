@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 구조 분해 할당 -->
+    <script>
+        // 일반 사용
+        let array = [1, 2, 3, 4, 5];
+        console.log(array[3]); // => 4
+
+        // 배열 구조 분해 할당
+        let a1, a2, a3, a4, a5;
+        [a1, a2, a3, a4, a5] = [1,2,3,4,5];
+
+        console.log(a3);
+
+        // 객체 구조 분해 할당
+    const car = {
+        name: 'Fiat',
+        color: 'white',
+        weight: '850kg'
+    }
+
+    console.log(car.name);
+
+    const {name, color, weight} = car;
+
+    console.log(name, color, weight);
+
+    function printCar(carObject){
+        console.log(carObject.name, carObject.color, carObject.weight);
+    }
+
+    printCar(car);
+
+    function viewCar({name, color, weight}){
+        console.log(name, color, weight);
+    }
+
+    viewCar(car);
+
+    </script>
+</body>
+</html>
